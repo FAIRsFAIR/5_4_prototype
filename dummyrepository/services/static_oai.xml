@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Repository xmlns="http://www.openarchives.org/OAI/2.0/static-repository"
+            xmlns:oai="http://www.openarchives.org/OAI/2.0/"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/static-repository
+                                http://www.openarchives.org/OAI/2.0/static-repository.xsd">
+    <Identify>
+        <oai:repositoryName>Dummy Data Repository</oai:repositoryName>
+        <oai:baseURL>https://dummyrepository.org/services/static_oai.xml</oai:baseURL>
+        <oai:protocolVersion>2.0</oai:protocolVersion>
+        <oai:earliestDatestamp>2024-08-07</oai:earliestDatestamp>
+        <oai:deletedRecord>no</oai:deletedRecord>
+        <oai:granularity>YYYY-MM-DD</oai:granularity>
+    </Identify>
+    <ListMetadataFormats>
+        <oai:metadataFormat>
+            <oai:metadataPrefix>oai_dc</oai:metadataPrefix>
+            <oai:schema>http://www.openarchives.org/OAI/2.0/oai_dc.xsd</oai:schema>
+            <oai:metadataNamespace>http://www.openarchives.org/OAI/2.0/oai_dc/</oai:metadataNamespace>
+        </oai:metadataFormat>
+    </ListMetadataFormats>
+    <ListRecords metadataPrefix="oai_dc">
+        <oai:record>
+            <oai:header>
+                <oai:identifier>oai:dummy:dataset/oai:identifier>
+                <oai:datestamp>2024-07-08</oai:datestamp>
+            </oai:header>
+            <oai:metadata>
+                <oai_dc:dc
+                        xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+                        xmlns:dc="http://purl.org/dc/elements/1.1/"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                        xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/
+                                http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+                    <dc:title>A Dummy dataset hosted by a dummy repository</dc:title>
+                    <dc:identifier>somedoi</dc:identifier>
+                    <dc:creator>Huber, Robert</dc:creator>
+                    <dc:subject>Digital Libraries</dc:subject>
+                    <dc:description>This dataset shall serve as an example to demonstrate some features
+                    </dc:description>
+                    <dc:date>2024-07-08</dc:date>
+                </oai_dc:dc>
+            </oai:metadata>
+        </oai:record>
+    </ListRecords>
+</Repository>

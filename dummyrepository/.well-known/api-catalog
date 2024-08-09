@@ -1,0 +1,40 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://dummyrepository.org/services/static_oai.xml",
+      "service-doc": [
+        {
+          "href": "https://www.openarchives.org/OAI/2.0/guidelines-static-repository.htm",
+          "type": "text/html",
+          "title": "Specification for an OAI Static Repository and an OAI Static Repository Gateway"
+        }
+      ],
+      "service-meta": [
+        {
+          "href": "https://dummyrepository.org/services/static_oai.xml",
+          "type": "application/xml"
+        }
+      ]
+    },
+    {
+      "anchor": "https://dummyrepository.org/services/atom.xml",
+      "service-doc": [
+        {
+          "href": "https://datatracker.ietf.org/doc/html/rfc4287",
+          "type": "text/html",
+          "title": "The Atom Syndication Format"
+        }
+      ]
+    },
+    {
+      "anchor": "https://dummyrepository.org/sitemap/index.xml",
+      "service-doc": [
+        {
+          "href": "https://www.sitemaps.org/protocol.html",
+          "type": "text/html",
+          "title": "sitemaps.org - Protocol"
+        }
+      ]
+    }
+  ]
+}

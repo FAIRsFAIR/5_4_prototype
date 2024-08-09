@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Dummy Data repository Feed</title>
+    <link href="https://dummyrepository.org/services/atom.xml"/>
+    <updated>2024-08-07T12:30:00Z</updated>
+    <author>
+        <name>Robert Huber</name>
+    </author>
+    <entry>
+        <title>A Dummy dataset hosted by a dummy repository</title>
+        <link href="dataset.html"/>
+        <updated>2024-08-07T12:30:00Z</updated>
+    </entry>
+</feed>
