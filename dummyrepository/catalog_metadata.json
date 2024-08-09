@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "adms": "http://www.w3.org/ns/adms#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dc": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "premis":"http://www.loc.gov/premis/rdf/v3/"
+  },
+  "@type": ["schema:DataCatalog", "schema:Project","dcat:Catalog","foaf:Project"],
+  "@id" : "https://dummyrepository.org",
+  "schema:url": "https://dummyrepository.org",
+  "foaf:homepage":"https://dummyrepository.org",
+  "dc:identifier": "https://dummyrepository.org",
+  "foaf:name": "Dummy Data Repository",
+  "schema:name" : "Dummy Data Repository",
+  "dc:title" : "Dummy Data Repository",
+  "dc:description":"Dummy Data Repository Description",
+  "schema:description":"Dummy Data Repository Description",
+  "dcat:contactPoint": "https://dummyrepository.org/contact",
+  "schema:contactPoint": "https://dummyrepository.org/contact",
+  "dcat:theme":["generic"],
+  "schema:keywords":["generic"],
+  "dc:accessRights": "open access",
+  "schema:conditionsOfAccess": "open access",
+  "dc:license":"https://creativecommons.org/licenses/by/4.0/",
+  "schema:license":"https://creativecommons.org/licenses/by/4.0/",
+  "dc:conformsTo":[
+    {
+      "@type":"dc:accrualPolicy",
+      "@id":"https://dummyrepository.org/policies/termsofdeposit.html"
+    },
+    {
+      "@type":["dc:Policy","premis:PreservationPolicy"],
+      "@id":"https://dummyrepository.org/policies/preservationpolicy.html"
+    }
+  ],
+  "dc:publisher":{
+    "@type":["foaf:Agent","vcard:Kind"],
+    "foaf:name":"Dummy Publisher",
+    "vcard:fn": "Dummy Publisher",
+    "vcard:country-name":"Germany"
+  },
+  "dc:language":"eng",
+  "schema:inLanguage":"eng",
+  "dcat:service": {
+    "@type": "dcat:DataService",
+    "dcat:endpointURL":"https://dummyrepository.org/.well-known/api-catalog",
+    "dc:conformsTo": "https://signposting.org/FAIRiCat/"
+  }
+}
