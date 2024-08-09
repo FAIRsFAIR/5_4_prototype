@@ -35,32 +35,6 @@
           "title": "sitemaps.org - Protocol"
         }
       ]
-    },
-    {
-      "anchor": "https://www.openarch.nl/search.php",
-      "service-desc": [
-        {
-          "href": "https://www.openarchieven.nl/opensearch/nl.xml",
-          "type": "application/xml"
-        }
-      ],
-      "service-doc": [
-        {
-          "href": "https://github.com/dewitt/opensearch/blob/master/opensearch-1-1-draft-6.md",
-          "type": "text/markdown",
-          "title": "OpenSearch 1.1 Draft 6"
-        }
-      ]
-    },
-    {
-      "anchor": "https://www.openarch.nl/rss/collections.php",
-      "service-doc": [
-        {
-          "href": "https://www.rssboard.org/rss-specification",
-          "type": "text/html",
-          "title": "RSS 2.0 Specification"
-        }
-      ]
     }
   ]
 }
