@@ -27,7 +27,7 @@
       ]
     },
     {
-      "anchor": "https://dummyrepository.org/sitemap/index.xml",
+      "anchor": "https://dummyrepository.org/sitemap.xml",
       "service-doc": [
         {
           "href": "https://www.sitemaps.org/protocol.html",

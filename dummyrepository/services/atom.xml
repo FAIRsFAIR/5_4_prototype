@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <title>Dummy Data repository Feed</title>
-    <link href="https://dummyrepository.org/services/atom.xml"/>
-    <updated>2024-08-07T12:30:00Z</updated>
-    <author>
-        <name>Robert Huber</name>
-    </author>
-    <entry>
-        <title>A Dummy dataset hosted by a dummy repository</title>
-        <link href="dataset.html"/>
-        <updated>2024-08-07T12:30:00Z</updated>
-    </entry>
-</feed>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Dummy Data Repository Feed</title>
+        <link>https://dummyrepository.org</link>
+        <description>The dummy data repository feed</description>
+        <docs>https://www.rssboard.org/rss-specification</docs>
+        <atom:link href="https://dummyrepository.org/services/atom.xml" rel="self" type="application/rss+xml" />
+        <item>
+            <title>A Dummy dataset hosted by a dummy repository</title>
+            <link>https://dummyrepository.org/dataset.html</link>
+            <pubDate>2024-08-07T12:30:00Z</pubDate>
+        </item>
+    </channel>
+</rss>

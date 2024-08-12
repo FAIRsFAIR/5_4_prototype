@@ -22,7 +22,7 @@
     <ListRecords metadataPrefix="oai_dc">
         <oai:record>
             <oai:header>
-                <oai:identifier>oai:dummy:dataset/oai:identifier>
+                <oai:identifier>oai:dummy:dataset</oai:identifier>
                 <oai:datestamp>2024-07-08</oai:datestamp>
             </oai:header>
             <oai:metadata>
