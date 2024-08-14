@@ -20,9 +20,9 @@
       "anchor": "https://dummyrepository.org/services/atom.xml",
       "service-doc": [
         {
-          "href": "https://datatracker.ietf.org/doc/html/rfc4287",
+          "href": "https://www.rssboard.org/rss-specification",
           "type": "text/html",
-          "title": "The Atom Syndication Format"
+          "title": "RSS 2.0 Specification (Current)"
         }
       ]
     },
@@ -35,6 +35,16 @@
           "title": "sitemaps.org - Protocol"
         }
       ]
-    }
+    },
+    {
+          "anchor": "https://dummyrepository.org/dataset.html",
+          "service-doc": [
+            {
+              "href": "https://w3id.org",
+              "type": "text/html",
+              "title": "Permanent Identifiers for the Web"
+            }
+          ]
+        }
   ]
 }

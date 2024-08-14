@@ -1,6 +1,5 @@
 {
   "@context": {
-    "adms": "http://www.w3.org/ns/adms#",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dc": "http://purl.org/dc/terms/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -37,6 +36,10 @@
     {
       "@type":["dc:Policy","premis:PreservationPolicy"],
       "@id":"https://dummyrepository.org/policies/preservationpolicy.html"
+    },
+    {
+      "@type":"dc:Standard",
+      "@id": "https://w3id.org"
     }
   ],
   "dc:publisher":{
@@ -47,9 +50,26 @@
   },
   "dc:language":"eng",
   "schema:inLanguage":"eng",
-  "dcat:service": {
-    "@type": "dcat:DataService",
-    "dcat:endpointURL":"https://dummyrepository.org/.well-known/api-catalog",
-    "dc:conformsTo": "https://signposting.org/FAIRiCat/"
-  }
+  "dcat:service": [
+    {
+      "@type": "dcat:DataService",
+      "dcat:endpointURL":"https://dummyrepository.org/.well-known/api-catalog",
+      "dc:conformsTo": "https://signposting.org/FAIRiCat/"
+    },
+    {
+      "@type": "dcat:DataService",
+      "dcat:endpointURL" : "https://dummyrepository.org/services/atom.xml",
+      "dc:conformsTo": "https://www.rssboard.org/rss-specification"
+    },
+    {
+      "@type": "dcat:DataService",
+      "dcat:endpointURL" : "https://dummyrepository.org/services/static_oai.xml",
+      "dc:conformsTo": "https://www.openarchives.org/OAI/2.0/guidelines-static-repository.htm"
+    },
+    {
+      "@type": "dcat:DataService",
+      "dcat:endpointURL": "https://dummyrepository.org/sitemap.xml",
+      "dc:conformsTo": "https://www.sitemaps.org/protocol.html"
+    }
+  ]
 }
