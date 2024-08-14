@@ -8,7 +8,9 @@
     "schema": "http://schema.org/",
     "vcard": "http://www.w3.org/2006/vcard/ns#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "premis":"http://www.loc.gov/premis/rdf/v3/"
+    "premis":"http://www.loc.gov/premis/rdf/v3/",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "oa": "http://www.w3.org/ns/oa#"
   },
   "@type": ["schema:DataCatalog", "schema:Project","dcat:Catalog","foaf:Project"],
   "@id" : "https://dummyrepository.org",
@@ -28,6 +30,12 @@
   "schema:conditionsOfAccess": "open access",
   "dc:license":"https://creativecommons.org/licenses/by/4.0/",
   "schema:license":"https://creativecommons.org/licenses/by/4.0/",
+  "dqv:hasQualityAnnotation": {
+    "@type":"dqv:QualityCertificate",
+    "oa:hasTarget" : "https://dummyrepository.org",
+    "oa:hasBody" : "https://amt.coretrustseal.org/certificates",
+    "oa:motivatedBy": "dqv:qualityAssessment"
+  },
   "dc:conformsTo":[
     {
       "@type":"dc:accrualPolicy",
