@@ -10,74 +10,176 @@
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "premis":"http://www.loc.gov/premis/rdf/v3/",
     "dqv": "http://www.w3.org/ns/dqv#",
-    "oa": "http://www.w3.org/ns/oa#"
+    "oa": "http://www.w3.org/ns/oa#",
+    "drwg" : "urn:drwg-x"
   },
-  "@type": ["schema:DataCatalog", "schema:Project","dcat:Catalog","foaf:Project"],
-  "@id" : "https://dummyrepository.org",
-  "schema:url": "https://dummyrepository.org",
-  "foaf:homepage":"https://dummyrepository.org",
-  "dc:identifier": "https://dummyrepository.org",
-  "foaf:name": "Dummy Data Repository",
-  "schema:name" : "Dummy Data Repository",
-  "dc:title" : "Dummy Data Repository",
-  "dc:description":"Dummy Data Repository Description",
-  "schema:description":"Dummy Data Repository Description",
-  "dcat:contactPoint": "https://dummyrepository.org/contact",
-  "schema:contactPoint": "https://dummyrepository.org/contact",
-  "dcat:theme":["generic"],
-  "schema:keywords":["generic"],
-  "dc:accessRights": "open access",
-  "schema:conditionsOfAccess": "open access",
-  "dc:license":"https://creativecommons.org/licenses/by/4.0/",
-  "schema:license":"https://creativecommons.org/licenses/by/4.0/",
-  "dqv:hasQualityAnnotation": {
-    "@type":"dqv:QualityCertificate",
-    "oa:hasTarget" : "https://dummyrepository.org",
-    "oa:hasBody" : "https://amt.coretrustseal.org/certificates",
-    "oa:motivatedBy": "dqv:qualityAssessment"
-  },
-  "dc:conformsTo":[
+  "@graph": [
     {
-      "@type":"dc:accrualPolicy",
-      "@id":"https://dummyrepository.org/policies/termsofdeposit.html"
+      "@id": "drwg:MetadataStandard",
+      "rdfs:label": "Metadata Standard",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": [
+        {
+        "@id": "dc:Standard"
+        },
+        {
+        "@id": "schema:CreativeWork"
+        }
+      ]
     },
     {
-      "@type":["dc:Policy","premis:PreservationPolicy"],
-      "@id":"https://dummyrepository.org/policies/preservationpolicy.html"
+      "@id": "drwg:PersistentIdentifierStandard",
+      "rdfs:label": "Persistent Identifier Standard",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": [
+        {
+          "@id": "dc:Standard"
+        },
+        {
+          "@id": "schema:CreativeWork"
+        }
+      ]
     },
     {
-      "@type":"dc:Standard",
-      "@id": "https://w3id.org"
-    }
-  ],
-  "dc:publisher":{
-    "@type":["foaf:Agent","vcard:Kind"],
-    "foaf:name":"Dummy Publisher",
-    "vcard:fn": "Dummy Publisher",
-    "vcard:country-name":"Germany"
-  },
-  "dc:language":"eng",
-  "schema:inLanguage":"eng",
-  "dcat:service": [
-    {
-      "@type": "dcat:DataService",
-      "dcat:endpointURL":"https://dummyrepository.org/.well-known/api-catalog",
-      "dc:conformsTo": "https://signposting.org/FAIRiCat/"
-    },
-    {
-      "@type": "dcat:DataService",
-      "dcat:endpointURL" : "https://dummyrepository.org/services/atom.xml",
-      "dc:conformsTo": "https://www.rssboard.org/rss-specification"
-    },
-    {
-      "@type": "dcat:DataService",
-      "dcat:endpointURL" : "https://dummyrepository.org/services/static_oai.xml",
-      "dc:conformsTo": "https://www.openarchives.org/OAI/2.0/guidelines-static-repository.htm"
-    },
-    {
-      "@type": "dcat:DataService",
-      "dcat:endpointURL": "https://dummyrepository.org/sitemap.xml",
-      "dc:conformsTo": "https://www.sitemaps.org/protocol.html"
+      "@type": [
+        "schema:DataCatalog",
+        "schema:Project",
+        "dcat:Catalog",
+        "foaf:Project"
+      ],
+      "@id": "https://dummyrepository.org",
+      "schema:url": "https://dummyrepository.org",
+      "foaf:homepage": "https://dummyrepository.org",
+      "dc:identifier": "https://dummyrepository.org",
+      "foaf:name": "Dummy Data Repository",
+      "schema:name": "Dummy Data Repository",
+      "dc:title": "Dummy Data Repository",
+      "dc:description": "Dummy Data Repository Description",
+      "schema:description": "Dummy Data Repository Description",
+      "dcat:contactPoint": "https://dummyrepository.org/contact",
+      "schema:contactPoint": "https://dummyrepository.org/contact",
+      "dcat:theme": [
+        "generic"
+      ],
+      "schema:keywords": [
+        "generic"
+      ],
+      "dc:accessRights": "open access",
+      "schema:conditionsOfAccess": "open access",
+      "dc:license": "https://creativecommons.org/licenses/by/4.0/",
+      "schema:license": "https://creativecommons.org/licenses/by/4.0/",
+      "dqv:hasQualityAnnotation": {
+        "@type": "dqv:QualityCertificate",
+        "oa:hasTarget": "https://dummyrepository.org",
+        "oa:hasBody": "https://amt.coretrustseal.org/certificates",
+        "oa:motivatedBy": "dqv:qualityAssessment"
+      },
+      "dc:conformsTo": [
+        {
+          "@type": "dc:accrualPolicy",
+          "@id": "https://dummyrepository.org/policies/termsofdeposit.html"
+        },
+        {
+          "@type": [
+            "dc:Policy",
+            "premis:PreservationPolicy"
+          ],
+          "@id": "https://dummyrepository.org/policies/preservationpolicy.html"
+        },
+        {
+          "@type": "drwg:MetadataStandard",
+          "@id": "http://www.dcc.ac.uk/resources/metadata-standards/dcat-data-catalog-vocabulary"
+        },
+        {
+          "@type": "drwg:PersistentIdentifierStandard",
+          "@id": "https://w3id.org"
+        }
+      ],
+      "schema:publishingPrinciples": [
+        {
+          "@type": "schema:CreativeWork",
+          "schema:url": "https://dummyrepository.org/policies/termsofdeposit.html"
+        },
+        {
+          "@type": "schema:CreativeWork",
+          "schema:url": "https://dummyrepository.org/policies/preservationpolicy.html"
+        }
+      ],
+      "dc:publisher": {
+        "@type": [
+          "foaf:Agent",
+          "vcard:Kind"
+        ],
+        "foaf:name": "Dummy Publisher",
+        "vcard:fn": "Dummy Publisher",
+        "vcard:country-name": "Germany"
+      },
+      "schema:publisher": {
+        "@type": "schema:Organization",
+        "schema:name": "Dummy Publisher",
+        "schema:address": {
+          "@type": "schema:PostalAddress",
+          "schema:addressCountry": "Germany"
+        }
+      },
+      "dc:language": "eng",
+      "schema:inLanguage": "eng",
+      "dcat:service": [
+        {
+          "@type": "dcat:DataService",
+          "dcat:endpointURL": "https://dummyrepository.org/.well-known/api-catalog",
+          "dc:conformsTo": "https://signposting.org/FAIRiCat/"
+        },
+        {
+          "@type": "dcat:DataService",
+          "dcat:endpointURL": "https://dummyrepository.org/services/atom.xml",
+          "dc:conformsTo": "https://www.rssboard.org/rss-specification"
+        },
+        {
+          "@type": "dcat:DataService",
+          "dcat:endpointURL": "https://dummyrepository.org/services/static_oai.xml",
+          "dc:conformsTo": "https://www.openarchives.org/OAI/2.0/guidelines-static-repository.htm"
+        },
+        {
+          "@type": "dcat:DataService",
+          "dcat:endpointURL": "https://dummyrepository.org/sitemap.xml",
+          "dc:conformsTo": "https://www.sitemaps.org/protocol.html"
+        }
+      ],
+      "schema:offers": [
+        {
+          "@type": "schema:Offer",
+          "schema:itemOffered": {
+            "@type": "schema:webAPI",
+            "schema:url": "https://dummyrepository.org/.well-known/api-catalog",
+            "schema:documentation": "https://signposting.org/FAIRiCat/"
+          }
+        },
+        {
+          "@type": "schema:Offer",
+          "schema:itemOffered": {
+            "@type": "schema:webAPI",
+            "schema:url": "https://dummyrepository.org/services/atom.xml",
+            "schema:documentation": "https://www.rssboard.org/rss-specification"
+          }
+        },
+        {
+          "@type": "schema:Offer",
+          "schema:itemOffered": {
+            "@type": "schema:webAPI",
+            "schema:url": "https://dummyrepository.org/services/static_oai.xml",
+            "schema:documentation": "https://www.openarchives.org/OAI/2.0/guidelines-static-repository.htm"
+          }
+        },
+        {
+          "@type": "schema:Offer",
+          "schema:itemOffered": {
+            "@type": "schema:webAPI",
+            "schema:url": "https://dummyrepository.org/sitemap.xml",
+            "schema:documentation": "https://www.sitemaps.org/protocol.html"
+          }
+        }
+      ]
     }
   ]
 }
