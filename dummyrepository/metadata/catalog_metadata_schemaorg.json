@@ -1,0 +1,83 @@
+{
+  "@context": {
+    "dc": "http://purl.org/dc/terms/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": [
+    "schema:DataCatalog",
+    "schema:Project"
+  ],
+  "@id": "https://dummyrepository.org",
+  "schema:url": "https://dummyrepository.org",
+  "schema:name": "Dummy Data Repository",
+  "schema:description": "Dummy Data Repository Description",
+  "schema:contactPoint": "https://dummyrepository.org/contact",
+  "schema:keywords": [
+    "generic"
+  ],
+  "schema:conditionsOfAccess": "open access",
+  "schema:license": "https://creativecommons.org/licenses/by/4.0/",
+  "schema:aggregateRating": {
+    "@type": "schema:AggregateRating",
+    "schema:itemReviewed": "https://dummyrepository.org",
+    "schema:url": "https://amt.coretrustseal.org/certificates",
+    "schema:ratingExplanation" : "Core Trust Seal Certificate"
+  },
+  "schema:publishingPrinciples": [
+    {
+      "@type": "schema:CreativeWork",
+      "schema:url": "https://dummyrepository.org/policies/termsofdeposit.html"
+    },
+    {
+      "@type": "schema:CreativeWork",
+      "schema:url": "https://dummyrepository.org/policies/preservationpolicy.html"
+    }
+  ],
+  "schema:publisher": {
+    "@type": "schema:Organization",
+    "schema:name": "Dummy Publisher",
+    "schema:address": {
+      "@type": "schema:PostalAddress",
+      "schema:addressCountry": "Germany"
+    }
+  },
+  "schema:inLanguage": "eng",
+  "schema:offers": [
+    {
+      "@type": "schema:Offer",
+      "schema:itemOffered": {
+        "@type": "schema:webAPI",
+        "schema:url": "https://dummyrepository.org/.well-known/api-catalog",
+        "schema:documentation": "https://signposting.org/FAIRiCat/"
+      }
+    },
+    {
+      "@type": "schema:Offer",
+      "schema:itemOffered": {
+        "@type": "schema:webAPI",
+        "schema:url": "https://dummyrepository.org/services/atom.xml",
+        "schema:documentation": "https://www.rssboard.org/rss-specification"
+      }
+    },
+    {
+      "@type": "schema:Offer",
+      "schema:itemOffered": {
+        "@type": "schema:webAPI",
+        "schema:url": "https://dummyrepository.org/services/static_oai.xml",
+        "schema:documentation": "https://www.openarchives.org/OAI/2.0/guidelines-static-repository.htm"
+      }
+    },
+    {
+      "@type": "schema:Offer",
+      "schema:itemOffered": {
+        "@type": "schema:webAPI",
+        "schema:url": "https://dummyrepository.org/sitemap.xml",
+        "schema:documentation": "https://www.sitemaps.org/protocol.html"
+      }
+    }
+  ]
+}
