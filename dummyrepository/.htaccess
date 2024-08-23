@@ -1,0 +1,9 @@
+DirectoryIndex catalog.html
+
+RewriteEngine on
+RewriteCond %{HTTP_ACCEPT} application/json\+ld
+RewriteRule catalog.html metadata.json [L,NC]
+
+<Files api-catalog>
+    ForceType application/json
+</Files>

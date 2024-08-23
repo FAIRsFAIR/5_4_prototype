@@ -20,7 +20,9 @@
         }
     </script>
     <title>A Dummy Data Catalog</title>
-    <link rel="describedby" type="application/ld+json" href="https://dummyrepository.org/metadata/catalog_metadata_dcat.json"/>
+    <link rel="describedby" type="application/ld+json" href="https://dummyrepository.org/metadata/catalog_metadata_schemaorg.json"/>
+    <link rel="api-catalog" type="application/linkset+json" href="https://dummyrepository.org/.well-known/api-catalog"/>
+
     <script type="application/ld+json">
         {
             "@context": {
@@ -32,7 +34,7 @@
                 "vcard": "http://www.w3.org/2006/vcard/ns#",
                 "xsd": "http://www.w3.org/2001/XMLSchema#",
                 "dqv": "http://www.w3.org/ns/dqv#",
-                "oa": "http://www.w3.org/ns/oa#",
+                "oa": "http://www.w3.org/ns/oa#"
             },
             "@type": [
                 "dcat:Catalog",

@@ -50,7 +50,7 @@
     {
       "@type": "schema:Offer",
       "schema:itemOffered": {
-        "@type": "schema:webAPI",
+        "@type": "schema:WebAPI",
         "schema:url": "https://dummyrepository.org/.well-known/api-catalog",
         "schema:documentation": "https://signposting.org/FAIRiCat/"
       }
@@ -58,7 +58,7 @@
     {
       "@type": "schema:Offer",
       "schema:itemOffered": {
-        "@type": "schema:webAPI",
+        "@type": "schema:WebAPI",
         "schema:url": "https://dummyrepository.org/services/atom.xml",
         "schema:documentation": "https://www.rssboard.org/rss-specification"
       }
@@ -66,7 +66,7 @@
     {
       "@type": "schema:Offer",
       "schema:itemOffered": {
-        "@type": "schema:webAPI",
+        "@type": "schema:WebAPI",
         "schema:url": "https://dummyrepository.org/services/static_oai.xml",
         "schema:documentation": "https://www.openarchives.org/OAI/2.0/guidelines-static-repository.htm"
       }
@@ -74,7 +74,7 @@
     {
       "@type": "schema:Offer",
       "schema:itemOffered": {
-        "@type": "schema:webAPI",
+        "@type": "schema:WebAPI",
         "schema:url": "https://dummyrepository.org/sitemap.xml",
         "schema:documentation": "https://www.sitemaps.org/protocol.html"
       }
