@@ -21,11 +21,17 @@
   ],
   "schema:conditionsOfAccess": "open access",
   "schema:license": "https://creativecommons.org/licenses/by/4.0/",
-  "schema:aggregateRating": {
-    "@type": "schema:AggregateRating",
-    "schema:itemReviewed": "https://dummyrepository.org",
+  "schema:hasCertification" : {
+    "@type": "schema:Certification",
     "schema:url": "https://amt.coretrustseal.org/certificates",
-    "schema:ratingExplanation" : "Core Trust Seal Certificate"
+    "schema:certificationStatus": "schema:CertificationActive",
+    "schema:issuedBy": {
+      "@type": "schema:Organization",
+      "schema:name": "CoreTrustSeal",
+      "schema:url": "https://www.coretrustseal.org"
+    },
+    "schema:auditDate": "2024-09-09",
+    "schema:expires": "2024-12-31"
   },
   "schema:publishingPrinciples": [
     {
