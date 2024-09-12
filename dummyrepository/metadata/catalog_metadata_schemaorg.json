@@ -5,7 +5,8 @@
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "schema": "http://schema.org/",
     "vcard": "http://www.w3.org/2006/vcard/ns#",
-    "xsd": "http://www.w3.org/2001/XMLSchema#"
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "premis" : "http://www.loc.gov/premis/rdf/v3/"
   },
   "@type": [
     "schema:DataCatalog",
@@ -36,11 +37,13 @@
   "schema:publishingPrinciples": [
     {
       "@type": "schema:CreativeWork",
-      "schema:url": "https://dummyrepository.org/policies/termsofdeposit.html"
+      "schema:url": "https://dummyrepository.org/policies/termsofdeposit.html",
+      "schema:additionalType": "dct:accrualPolicy"
     },
     {
       "@type": "schema:CreativeWork",
-      "schema:url": "https://dummyrepository.org/policies/preservationpolicy.html"
+      "schema:url": "https://dummyrepository.org/policies/preservationpolicy.html",
+      "schema:additionalType": "premis:PreservationPolicy"
     }
   ],
   "schema:publisher": {
@@ -83,6 +86,22 @@
         "@type": "schema:WebAPI",
         "schema:url": "https://dummyrepository.org/sitemap.xml",
         "schema:documentation": "https://www.sitemaps.org/protocol.html"
+      }
+    },
+    {
+      "@type": "schema:Offer",
+      "schema:itemOffered": {
+        "@type": "schema:Service",
+        "schema:documentation": "http://www.dcc.ac.uk/resources/metadata-standards/dcat-data-catalog-vocabulary",
+        "schema:serviceType": "https://w3id.org/fair/fip/latest/Identifier-service"
+      }
+    },
+    {
+      "@type": "schema:Offer",
+      "schema:itemOffered": {
+        "@type": "schema:Service",
+        "schema:documentation": "https://w3id.org",
+        "schema:serviceType": "https://w3id.org/fair/fip/latest/Metadata-schema"
       }
     }
   ]

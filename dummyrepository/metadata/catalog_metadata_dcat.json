@@ -8,7 +8,8 @@
     "vcard": "http://www.w3.org/2006/vcard/ns#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "dqv": "http://www.w3.org/ns/dqv#",
-    "oa": "http://www.w3.org/ns/oa#"
+    "oa": "http://www.w3.org/ns/oa#",
+    "premis" : "http://www.loc.gov/premis/rdf/v3/"
   },
   "@type": [
     "dcat:Catalog",
@@ -38,7 +39,7 @@
       "@id": "https://dummyrepository.org/policies/termsofdeposit.html"
     },
     {
-      "@type": "dct:Policy",
+      "@type": "premis:PreservationPolicy",
       "@id": "https://dummyrepository.org/policies/preservationpolicy.html",
       "rdfs:seeAlso": "https://w3id.org/fair/fip/latest/Metadata-preservation-policy"
     },
