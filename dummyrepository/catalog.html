@@ -27,14 +27,15 @@
         {
             "@context": {
                 "dcat": "http://www.w3.org/ns/dcat#",
-                "dc": "http://purl.org/dc/terms/",
+                "dct": "http://purl.org/dc/terms/",
                 "foaf": "http://xmlns.com/foaf/0.1/",
                 "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
                 "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
                 "vcard": "http://www.w3.org/2006/vcard/ns#",
                 "xsd": "http://www.w3.org/2001/XMLSchema#",
                 "dqv": "http://www.w3.org/ns/dqv#",
-                "oa": "http://www.w3.org/ns/oa#"
+                "oa": "http://www.w3.org/ns/oa#",
+                "premis" : "http://www.loc.gov/premis/rdf/v3/"
             },
             "@type": [
                 "dcat:Catalog",
@@ -42,44 +43,44 @@
             ],
             "@id": "https://dummyrepository.org",
             "foaf:homepage": "https://dummyrepository.org",
-            "dc:identifier": "https://dummyrepository.org",
+            "dct:identifier": "https://dummyrepository.org",
             "foaf:name": "Dummy Data Repository",
-            "dc:title": "Dummy Data Repository",
-            "dc:description": "Dummy Data Repository Description",
+            "dct:title": "Dummy Data Repository",
+            "dct:description": "Dummy Data Repository Description",
             "dcat:contactPoint": "https://dummyrepository.org/contact",
             "dcat:theme": [
                 "generic"
             ],
-            "dc:accessRights": "open access",
-            "dc:license": "https://creativecommons.org/licenses/by/4.0/",
+            "dct:accessRights": "open access",
+            "dct:license": "https://creativecommons.org/licenses/by/4.0/",
             "dqv:hasQualityAnnotation": {
                 "@type": "dqv:QualityCertificate",
                 "oa:hasTarget": "https://dummyrepository.org",
                 "oa:hasBody": "https://amt.coretrustseal.org/certificates",
                 "oa:motivatedBy": "dqv:qualityAssessment"
             },
-            "dc:conformsTo": [
+            "dct:conformsTo": [
                 {
-                    "@type": "dc:accrualPolicy",
+                    "@type": "dct:accrualPolicy",
                     "@id": "https://dummyrepository.org/policies/termsofdeposit.html"
                 },
                 {
-                    "@type": "dc:Policy",
+                    "@type": "premis:PreservationPolicy",
                     "@id": "https://dummyrepository.org/policies/preservationpolicy.html",
                     "rdfs:seeAlso": "https://w3id.org/fair/fip/latest/Metadata-preservation-policy"
                 },
                 {
-                    "@type": "dc:Standard",
+                    "@type": "dct:Standard",
                     "@id": "http://www.dcc.ac.uk/resources/metadata-standards/dcat-data-catalog-vocabulary",
                     "rdfs:seeAlso": "https://w3id.org/fair/fip/latest/Metadata-schema"
                 },
                 {
-                    "@type": "dc:Standard",
+                    "@type": "dct:Standard",
                     "@id": "https://w3id.org",
                     "rdfs:seeAlso": "https://w3id.org/fair/fip/latest/Identifier-service"
                 }
             ],
-            "dc:publisher": {
+            "dct:publisher": {
                 "@type": [
                     "foaf:Agent",
                     "vcard:Kind"
@@ -88,27 +89,27 @@
                 "vcard:fn": "Dummy Publisher",
                 "vcard:country-name": "Germany"
             },
-            "dc:language": "eng",
+            "dct:language": "eng",
             "dcat:service": [
                 {
                     "@type": "dcat:DataService",
                     "dcat:endpointURL": "https://dummyrepository.org/.well-known/api-catalog",
-                    "dc:conformsTo": "https://signposting.org/FAIRiCat/"
+                    "dct:conformsTo": "https://signposting.org/FAIRiCat/"
                 },
                 {
                     "@type": "dcat:DataService",
                     "dcat:endpointURL": "https://dummyrepository.org/services/atom.xml",
-                    "dc:conformsTo": "https://www.rssboard.org/rss-specification"
+                    "dct:conformsTo": "https://www.rssboard.org/rss-specification"
                 },
                 {
                     "@type": "dcat:DataService",
                     "dcat:endpointURL": "https://dummyrepository.org/services/static_oai.xml",
-                    "dc:conformsTo": "https://www.openarchives.org/OAI/2.0/guidelines-static-repository.htm"
+                    "dct:conformsTo": "https://www.openarchives.org/OAI/2.0/guidelines-static-repository.htm"
                 },
                 {
                     "@type": "dcat:DataService",
                     "dcat:endpointURL": "https://dummyrepository.org/sitemap.xml",
-                    "dc:conformsTo": "https://www.sitemaps.org/protocol.html"
+                    "dct:conformsTo": "https://www.sitemaps.org/protocol.html"
                 }
             ]
         }
