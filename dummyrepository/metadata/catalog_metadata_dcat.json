@@ -29,6 +29,7 @@
   "dct:license": "https://creativecommons.org/licenses/by/4.0/",
   "dqv:hasQualityAnnotation": {
     "@type": "dqv:QualityCertificate",
+    "dct:creator": "CoreTrustSeal",
     "oa:hasTarget": "https://dummyrepository.org",
     "oa:hasBody": "https://amt.coretrustseal.org/certificates",
     "oa:motivatedBy": "dqv:qualityAssessment"
