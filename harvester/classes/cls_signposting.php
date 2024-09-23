@@ -6,7 +6,7 @@ class signposting_helper {
     function __construct($response)
     {
         $this->allowed_rels = ["describedby", "item", "license", "type", "collection", "author", "linkset",
-            "cite-as", "api-catalog", "service-doc", "service-desc", "service-meta",];
+            "cite-as", "api-catalog", "service-doc", "service-desc", "service-meta","alternate"];
         $this->target_header = [];
         $this->target_html ='';
         $this->signposting_links = [];
