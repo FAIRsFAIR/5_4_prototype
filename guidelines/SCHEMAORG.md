@@ -29,14 +29,14 @@ To indicate the contact information for a given repository we recommend to use t
 
 To expose information of available APIs supporting machine interoperability of a data repository, we propose to use the schema:offers property, which may list several instances of schema:Offer, which then links to instances of schema:WebAPI (a subclass of schema:Service) via their schema:itemOffered property. There, we follow the example of FAIRiCAT[^2] and use the schema:documentation to describe the type of service. This should be the web link to the documentation of the standard the web API follows. The schema:url can be used to  describe the endpoint URI of the API.
 
-![][image1]  
+![](image1.png)  
 **Figure 7 \- Example of exposure of available APIs**
 
 An initial list of web APIs and their documentation links can be found in Appendix 1\.
 
 Similarly, other standards supported by a data repository can be described using schema.org as an schema:Offer, which then should be a schema:Service instead of a schema:WebAPI. We propose to use the property schema:serviceType to unambiguously indicate which DRAWG service category  (persistent identifier or metadata standard) is described. We recommend using the FAIR vocabulary terms Identifier Service[^3] and Metadata Schema[^4] respectively to do so.
 
-![][image2]  
+![](image2.png)  
 **Figure 8 \- Example of standards exposure**
 
 Again, we use the schema:documentation to indicate the PID or metadata standard a data repository supports.
@@ -67,14 +67,14 @@ Unfortunately, schema.org does not offer a generic way to describe policies such
 
 To clarify which policy actually is described, we recommend to use the schema:additionalType property and here to use the values premis:PreservationPolicy to indicate the preservation policy and dct:accrualPolicy to indicate the terms of deposit.
 
-![][image3]  
+![](image3.png)  
 **Figure 9 \- Example of exposure of policy**
 
 4. #### Certification and Quality Information
 
 As mentioned above, we chose schema:Project to model a data repository which allows us to include additional DRAWG properties. From these, we recommend to use the schema:hasCertification property to indicate certification details such as a given CoreTrustSeal certification. This property requires the use of a schema:Certification instance which allows linking to a certification document via the schema:url property which should  be the DOI of a CoreTrustSeal certificate. It further allows to include useful information about certificates such as audit date, validity and issuer. 
 
-![][image4]
+![](image4.png)
 
 **Figure 10 \- Example of exposure of certification information**
 
