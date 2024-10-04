@@ -27,7 +27,7 @@ Most of these properties will be provided as Literals. However, we follow the re
 
 To expose information about standards offered to support machine interoperability, we recommend using dcat:service which allows us to provide a list of instances of dcat:DataService. There, the properties dcat:endpointURL and dct:conformsTo shall be used to provide information about the service endpoint URL as well as the service type which should be the web link to the documentation of the standard the web API follows (see the Appendix  and the living document[^5]).
 
-![][image1]
+![](image5.png)
 
 **Figure 3 \- Example of dcat:service use**
 
@@ -38,7 +38,7 @@ To unambiguously identify a metadata standard we recommend to use a linked term 
 
 To indicate supported persistent identifier (PID) types, we recommend using the home URI of a PID system (e.g. DOI[^9], Handle[^10], etc.), which uniquely identifies a PID system.
 
-![][image2]  
+![](image6.png)  
 **Figure 4 \- Example of persistent identifier type exposure**
 
 3. #### Policies and Principles
@@ -53,7 +53,7 @@ Similar to the way we recommend to indicate standards, the dct:conformsTo proper
 | Terms of Deposit | dct:conformsTo \=\> dct:accrualPolicy |
 | Preservation | dct:conformsTo \=\> premis:PreservationPolicy |
 
-![][image3]  
+![](image7.png)  
 **Figure 5 \- Example of policy exposure**
 
 4. #### Certification and Quality Information
@@ -66,7 +66,7 @@ The Data Quality Vocabulary (DQV) is part of the W3C data on the web best practi
 | :---- | :---- |
 | Certification | dqv:hasQualityAnnotation \=\> dqv:QualityCertificate |
 
-![](image5.png) 
+![](image8.png) 
 **Figure 6 \- Example of certificate exposure**
 
 [^1]:  [https://semiceu.github.io/DCAT-AP/releases/3.0.0/\#Catalogue](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue) 
