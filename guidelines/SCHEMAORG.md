@@ -65,7 +65,7 @@ Unfortunately, schema.org does not offer a generic way to describe policies such
 | Terms of Deposit | schema:publishingPrinciples |
 | Preservation | schema:publishingPrinciples |
 
-To clarify which policy actually is described, we recommend to use the schema:additionalType property and here to use the values premis:PreservationPolicy to indicate the preservation policy and dct:accrualPolicy to indicate the terms of deposit.
+To clarify which policy actually is described, we recommend to use the schema:additionalType property and here to use the values premis:PreservationPolicy to indicate the preservation policy.
 ![](image2.png)  
 
 **Figure 9 \- Example of exposure of policy**
