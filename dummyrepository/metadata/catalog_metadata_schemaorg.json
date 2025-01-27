@@ -38,7 +38,7 @@
     {
       "@type": "schema:CreativeWork",
       "schema:url": "https://dummyrepository.org/policies/termsofdeposit.html",
-      "schema:additionalType": "dct:accrualPolicy"
+      "schema:additionalType": "dct:Policy"
     },
     {
       "@type": "schema:CreativeWork",
