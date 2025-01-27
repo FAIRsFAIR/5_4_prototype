@@ -43,14 +43,14 @@ To indicate supported persistent identifier (PID) types, we recommend using the 
 
 3. #### Policies and Principles
 
-Similar to the way we recommend to indicate standards, the dct:conformsTo property should be used to link an instance of dct:Policy or subclasses of dct:Policy. Here we recommend to use dct:accrualPolicy to indicate documents which describe the terms of deposit and the premis:PreservationPolicy[^11] to indicate the preservation and/or curation policy of a data repository.
+Similar to the way we recommend to indicate standards, the dct:conformsTo property should be used to link an instance of dct:Policy or subclasses of dct:Policy. Here we recommend to use premis:PreservationPolicy[^11] to indicate the preservation and/or curation policy of a data repository.
 
 **Table 3 \- Mapping of dct:conformsTo to other properties for different DRAWG attributes.**
 
 | DRAWG | DCAT |
 | :---- | :---- |
 | Curation | dct:conformsTo \=\> dct:Policy or premis:PreservationPolicy |
-| Terms of Deposit | dct:conformsTo \=\> dct:accrualPolicy |
+| Terms of Deposit | dct:conformsTo \=\> dct:Policy |
 | Preservation | dct:conformsTo \=\> premis:PreservationPolicy |
 
 ![](image7.png)  
