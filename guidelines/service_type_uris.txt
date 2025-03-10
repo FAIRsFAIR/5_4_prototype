@@ -1,0 +1,42 @@
+Acronym	URI	Title
+OAI-PMH	https://www.openarchives.org/OAI/openarchivesprotocol.html	Open Archives Initiative - Protocol for Metadata Harvesting
+OAI-PMH	http://www.openarchives.org/OAI/2.0/	Open Archives Initiative - Protocol for Metadata Harvesting
+Static OAI	https://www.openarchives.org/OAI/2.0/guidelines-static-repository.htm	OAI Static Repository
+REST	https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm	Representational State Transfer
+OpenDAP	https://docs.opendap.org/index.php/Home	OpenDAP
+THREDDS	https://www.unidata.ucar.edu/software/tds/	THREDDS Data Server
+ERDDAP	https://coastwatch.pfeg.noaa.gov/erddap/index.html	ERDDAP
+SPARQL	https://www.w3.org/TR/sparql11-query/	SPARQL Query Language
+SOAP	https://www.w3.org/TR/soap/	Simple Object Access Protocol
+SWORD	http://swordapp.org/	Simple Web-service Offering Repository Deposit
+Sitemaps	https://www.sitemaps.org/protocol.html	Sitemaps XML format
+OpenAPI	https://spec.openapis.org/oas/v3.1.0	OpenAPI Specification
+OpenAPI	https://spec.openapis.org/oas/v3.0.3	OpenAPI Specification
+OpenAPI	https://spec.openapis.org/oas/v2.0	OpenAPI Specification
+IIIF Search API	https://iiif.io/api/search/2.0/	IIIF Content Search API
+IIIF Presentation API	https://iiif.io/api/presentation/3.0/	IIIF Presentation API
+LDN	https://www.w3.org/TR/ldn/	Linked Data Notifications
+OpenSearch	https://github.com/dewitt/opensearch/blob/master/opensearch-1-1-draft-6.md	Open Search
+OpenSearch	http://www.opensearch.org/Specifications/OpenSearch/1.1	Open Search
+OpenSearch	http://a9.com/-/spec/opensearch/1.1/	Open Search
+RSS	https://www.rssboard.org/rss-specification	Really Simple Syndication
+FAIRiCat	https://signposting.org/FAIRiCat/	FAIRiCat: Supporting Discovery of a Repository's Interoperability Affordances
+LAS	https://ferret.pmel.noaa.gov/LAS/	Live Access Server
+AMPQ	https://www.amqp.org/resources/specifications	Advanced Message Queuing Protocol
+MQTT	https://mqtt.org/mqtt-specification/	Message Queuing Telemetry Transport 
+XMPP	https://datatracker.ietf.org/doc/rfc6120/	Extensible Messaging and Presence Protocol
+TAP	https://www.ivoa.net/documents/TAP/	Table Access Protocol
+TAPIR	https://www.tdwg.org/standards/tapir/	TDWG Access Protocol for Information Retrieval
+DIGIR	https://sourceforge.net/projects/digir/	Distributed Generic Information Retrieval
+DIGIR	http://digir.net/schema/protocol/2003/1.0	Distributed Generic Information Retrieval
+CSW	"http://www.opengis.net/def/serviceType/ogc/csw	"	OGC Catalogue Service for the Web
+CSW	https://www.ogc.org/standard/cat/	OGC Catalogue Service for the Web
+WMS	http://www.opengis.net/def/serviceType/ogc/wms	OGC Web Map Service
+WMS	http://www.ogc.org/standards/wms	OGC Web Map Service
+WMTS	https://www.ogc.org/standard/wmts/	OpenGIS Web Map Tile Service
+WFS	http://www.opengis.net/def/serviceType/ogc/wfs	OGC Web Feature Service
+WFS	http://www.ogc.org/standards/wfs	OGC Web Feature Service
+SOS	"http://www.opengis.net/def/serviceType/ogc/sos	"	OGC Sensor Observation Service
+SOS	http://www.ogc.org/standards/sos	OGC Sensor Observation Service
+WCS	http://www.opengis.net/def/serviceType/ogc/wcs	OGC Web Coverage Service
+WCS	http://www.ogc.org/standards/wcs	OGC Web Coverage Service
