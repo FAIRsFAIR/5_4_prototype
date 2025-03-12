@@ -39,7 +39,7 @@ Similarly, other standards supported by a data repository can be described using
 ![](image4.png)
 **Figure 8 \- Example of standards exposure**
 
-Again, we use the schema:documentation to indicate the PID or metadata standard a data repository supports.
+We recommend to use the schema:serviceOutput to indicate the PID or metadata standard a data repository supports.
 
 Similarly as mentioned in the previous section, to indicate supported persistent identifier (PID) types, we recommend using the home URI of a PID system (e.g. DOI[^5], Handle[^6], etc.), which uniquely identifies a PID system.
 
