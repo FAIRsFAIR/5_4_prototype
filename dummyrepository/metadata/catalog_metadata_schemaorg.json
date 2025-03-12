@@ -93,7 +93,7 @@
       "schema:itemOffered": {
         "@type": "schema:Service",
         "schema:serviceOutput": {
-          "schema:identifier":"https://www.doi.org"
+          "schema:identifier":"https://www.w3id.org"
         },
         "schema:serviceType": "https://w3id.org/fair/fip/latest/Identifier-service"
       }
