@@ -92,7 +92,9 @@
       "@type": "schema:Offer",
       "schema:itemOffered": {
         "@type": "schema:Service",
-        "schema:documentation": "https://w3id.org",
+        "schema:serviceOutput": {
+          "schema:identifier":"https://www.doi.org"
+        },
         "schema:serviceType": "https://w3id.org/fair/fip/latest/Identifier-service"
       }
     },
@@ -100,7 +102,9 @@
       "@type": "schema:Offer",
       "schema:itemOffered": {
         "@type": "schema:Service",
-        "schema:documentation": "http://www.dcc.ac.uk/resources/metadata-standards/dcat-data-catalog-vocabulary",
+        "schema:serviceOutput": {
+          "schema:identifier":"http://www.dcc.ac.uk/resources/metadata-standards/dcat-data-catalog-vocabulary"
+        },
         "schema:serviceType": "https://w3id.org/fair/fip/latest/Metadata-schema"
       }
     }
